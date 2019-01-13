@@ -1,0 +1,137 @@
+/*------------------------------------*\
+    #Menu
+\*------------------------------------*/
+.header .navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	min-height: 100px;
+	border: none;
+	z-index: 1030;
+	padding:0;
+}
+
+.header .navbar.navbar-bordered{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav > li {
+	margin-right: 30px;
+	position: relative;
+}
+
+.navbar-nav > li > a {
+	font-family: @font-heading;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 700;
+	line-height: 100px;
+	color: @color-white;
+	padding: 0;
+	position: relative;
+}
+
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-nav > li.active > ul {
+	margin-top: 0;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+	background-color: transparent;
+	color: @color-theme
+}
+/* Menu Level #1 */
+.dropdown-toggle::after{
+	display: none;
+}
+.navbar-nav > li > .menu-item::before,
+.navbar-nav > li > .menu-item:hover::before {
+	position: absolute;
+	top: 22px;
+	left: 0;
+	margin: auto;
+	width: 0;
+	height: 3px;
+	background: @color-theme;
+	content: '';
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.navbar-nav > li > .menu-item:hover::before,
+.navbar-nav > li.active > .menu-item:before {
+	background-color: @color-theme;
+	width: 21px;
+}
+
+li.has-dropdown > ul.dropdown-menu > li.dropdown-submenu > a:before,
+ul.dropdown-menu > li.has-dropdown > a:before {
+	font-family: fontawesome;
+	content: "\f105";
+	font-size: 13px;
+	position: absolute;
+	right: 25px;
+}
+/* Menu Levels */
+
+.dropdown-menu {
+	background-color: transparent;
+	position: relative;
+	width: 100%;
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.header-light .navbar .module .module-icon i,
+.header-light .navbar .navbar-nav > li > a {
+	color: #222222;
+}
+
+.header-light .navbar .navbar-nav > li > .menu-item:hover::before,
+.header-light .navbar .navbar-nav > li.active > .menu-item:before {
+	background-color: #222222;
+}
+/* Navbar For Header Full */
+.header-full .navbar{
+	min-height: 60px;
+	padding-left: 25px;
+}
+
+.header-full .navbar-nav > li > a,
+.header-full .module .module-icon{
+	line-height: 60px;
+}
+
+.header-full .module-consultation .btn{
+	margin: 0;
+	border:none;
+	background:@color-theme;
+	line-height: 60px;
+	height: 60px;
+	width: 170px;
+	border-radius:0;
+}
+.header-full .module-consultation .btn:hover{
+	background:darken(@color-theme,10%);
+}
+.header-full .module .module-label{
+	top:12px;
+}
+
+/* Navbar For header Top Bar */
+.header-topbar .navbar{
+	min-height: 82px;
+}
+.header-topbar .navbar-nav > li > a{
+	line-height: 82px;
+}

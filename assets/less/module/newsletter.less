@@ -1,0 +1,97 @@
+/*------------------------------------*\
+    #Newsletter
+\*------------------------------------*/
+
+.newsletter p {
+    color: #f4f4f4;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+	letter-spacing: 0.8px;
+}
+
+.newsletter h3 {
+    color: @color-white;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 40px;
+}
+.newsletter .btn--primary:hover,
+.newsletter .btn--secondary:hover{
+    background-color: @color-white;
+	border-color: @color-white;
+    color: @color-theme;
+}
+.newsletter .form-control {
+    background-color: transparent;
+    width: 370px;
+    border: 2px solid #eeeeee;
+    margin-right: 30px;
+    margin-bottom: 0;
+    padding: 0px 15px;
+	height: 51px;
+	color:@color-white;
+}
+
+.newsletter-3.newsletter .form-control,
+.newsletter-4.newsletter .form-control {
+    border: 2px solid #eeeeee;
+    margin-right: 0;
+    border-radius: 100px;
+    width: 455px;
+    max-width: 100%;
+}
+
+.newsletter-3.newsletter button,
+.newsletter-4.newsletter button {
+    margin-left:-50px;
+}
+
+.newsletter .form-control::-webkit-input-placeholder {
+    color: @color-white;
+}
+
+.newsletter .form-control:-moz-placeholder {
+    color: @color-white;
+}
+
+.newsletter .form-control::-moz-placeholder {
+    color: @color-white;
+}
+
+.newsletter .form-control:-ms-input-placeholder {
+    color: @color-white;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .newsletter h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .newsletter .form-control,
+    .newsletter-3.newsletter .form-control,
+    .newsletter-4.newsletter .form-control {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .newsletter-3.newsletter button,
+    .newsletter-4.newsletter button {
+        margin-left: 0;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .newsletter h3 {
+        font-size: 39px;
+        line-height: 45px;
+    }
+}

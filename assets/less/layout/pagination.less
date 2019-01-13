@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+
+.pagination {
+	display: block;
+	margin: 0;
+	.rounded(0);
+}
+.pagination > li {
+	display: inline-block;
+}
+.pagination > li > a{
+	margin-right: 8px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	background-color: transparent;
+	color: @color-body;
+	font-family: @font-body;
+	font-size: 20px;
+	font-weight: 700;
+	border:2px solid #efefef;
+	text-transform: uppercase;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+.pagination > .active > a, .pagination > li:hover > a,
+.pagination > li > a:focus, .pagination > li > a:hover,
+.pagination > li > span:focus, .pagination > li > span:hover {
+    background-color: @color-theme !important;
+    color: @color-white;
+	border-color: @color-theme;
+	box-shadow: none;
+}

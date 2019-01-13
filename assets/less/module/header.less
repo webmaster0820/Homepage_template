@@ -1,0 +1,127 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header {
+	height: 100px;
+}
+
+.header-transparent {
+	background-color: transparent;
+}
+
+.header-transparent + .mtop-100,
+.header-transparent + .page-title,
+.header-transparent + .hero,
+.header-transparent + .slider, {
+	position: relative;
+	margin-top: -100px;
+}
+
+.header-full + .mtop-100,
+.header-full + .page-title,
+.header-full + .hero,
+.header-full + .slider, {
+	position: relative;
+	margin-top: -30px;
+}
+
+/* Header Bordered */
+.header-bordered .navbar {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-bordered .navbar.navbar--dark {
+	border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+/* Header Logo Brand */
+.header-transparent .navbar-brand .logo{
+	line-height: 100px;
+}
+.header-transparent .navbar-brand .logo-dark{
+	display: none;
+}
+
+/* Header Light */
+
+.header-light {
+	background-color: @color-white;
+}
+
+.header-light .navbar .logo-dark {
+	display: inline-block;
+}
+
+.header-light .navbar .logo-light {
+	display: none;
+}
+
+/* Header With Top Bar */
+
+.header-topbar {
+	height:128px;
+}
+
+.header-topbar .topbar {
+	height: 46px;
+	background:@color-dark3;
+	overflow: hidden;
+}
+.header-topbar .navbar-brand .logo{
+	line-height: 82px;
+}
+/* Header full */
+.header-full{
+	height:162px;
+	background:@color-white;
+}
+
+.header-full .contact-bar {
+	height: 105px;
+}
+.header-full .contact-bar .navbar-header{
+	height:105px;
+	line-height: 105px;
+}
+
+.header-full .contact-bar .module-container{
+	padding:35px 0;
+	display: flex;
+}
+
+.header-full .contact-bar .contact-box {
+	position: relative;
+	margin-right: 48px;
+}
+
+.header-full .contact-bar .contact-box-icon {
+	position: absolute;
+	left:0;
+	top:0;
+	line-height: 42px;
+	color: @color-theme;
+font-size: 16px;
+font-weight: 400;
+}
+.header-full .contact-bar .contact-box-info{
+	padding-left:25px;
+}
+
+.header-full .contact-bar .contact-box-info p {
+	color: #9b9b9b;
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+margin-bottom: 0;
+}
+
+.header-full .contact-bar .module-social a{
+	color:@color-theme;
+	font-size: 19px;
+font-weight: 400;
+line-height: 42px;
+}
+.header-full .contact-bar .module-social a:hover{
+	color:@color-heading;
+}

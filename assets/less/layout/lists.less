@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #Lists
+\*------------------------------------*/
+
+ul.list {
+    padding: 0;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+ul.list li {
+    color: @color-body;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    position: relative;
+}
+
+
+ul.dot-list li {
+    padding-left: 26px;
+}
+
+ul.dot-list li:before {
+    content: "\f111";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    font-family: @awesome;
+    font-size: 7px;
+    color: @color-theme;
+}

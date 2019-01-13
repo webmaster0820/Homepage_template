@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #MODALS
+\*------------------------------------*/
+body.modal-open { padding-right:0 !important}
+
+body.modal-open .affix{
+	display: none;
+}
+.modal{
+	z-index: 1080;
+	background: rgba(34,34,34, 0.95)
+}
+
+.modal::-webkit-scrollbar { 
+    display: none; 
+	width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.modal-backdrop{
+	z-index: 1020;
+	background-color:@color-heading;
+	display: none;
+}
+.modal-content {
+	border:none;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+}
+.modal-dialog {
+	margin-top: 20px;
+}
+.modal  button.close{
+	position: absolute;
+    top: 30px;
+    right: 30px;
+    color: @color-white;
+    z-index: 1040;
+    font-size: 14px;
+    font-weight: 400;
+	opacity: 1
+}
+.modal.reservation-popup button.close{
+	color: @color-heading;
+}
+.modal button.close:focus,
+.modal  button.close:hover{
+	color: @color-theme
+}
+

@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    #Workflow
+\*------------------------------------*/
+
+.workflow .tab-pane {
+	min-height: 597px;
+}
+
+.workflow .tab-pane .col-img {
+	height: 597px;
+}
+
+.workflow .tab-pane .col-content {
+	padding: 100px !important;
+	height: 597px;
+	box-shadow: 0 2px 3px rgba(40, 40, 40, 0.16);
+	border-radius: 0 2px 2px 0;
+	background-color: @color-white;
+}
+
+.workflow .tab-pane .col-content h4 {
+	font-size: 35px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 40px;
+	margin-bottom: 40px;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	.workflow .tab-pane .col-content {
+		padding: 30px !important;
+		height: auto;
+	}
+
+	.workflow .tab-pane .pr-0 {
+		padding-right: 15px !important;
+	}
+
+	.workflow .tab-pane .pl-0 {
+		padding-left: 15px !important;
+	}
+
+	.workflow .tab-pane .col-img {
+		height: auto;
+		min-height: 300px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.workflow{
+		padding-top:70px;
+		padding-bottom: 70px;
+	}
+	.workflow .tab-pane .col-content {
+		padding: 50px !important;
+	}
+}
+@media only screen and (min-width :992px) and (max-width : 1199px) {
+	.workflow{
+		padding-top:70px;
+		padding-bottom: 70px;
+	}
+	.workflow .tab-pane .col-content {
+		padding: 70px !important;
+	}
+}

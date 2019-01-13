@@ -1,0 +1,233 @@
+/*------------------------------------*\
+    #SOON
+\*------------------------------------*/
+
+.page-soon {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.page-soon h3 {
+	color: @color-heading;
+	font-size: 85px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 38px;
+}
+
+.page-soon p {
+	color: #a5a5a5;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	margin-bottom: 70px;
+}
+/* Flip Clock */
+.flip-clock-wrapper{
+	margin: 0 auto;
+	width: 360px;
+    height: 130px;
+	padding-left: 30px;
+}
+.flip-clock-divider {
+	width: 26px;
+}
+.flip-clock-divider .flip-clock-label{
+	font-size: 14px;
+	font-weight: 700;
+	color:@color-heading;
+	top: auto;
+	bottom: -26px;
+	right: -42px;
+}
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -51px;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -55px;
+}
+.flip-clock-divider .flip-clock-label:before{
+	position: absolute;
+	top: -69px;
+    left: -19px;
+	content: "";
+	width: 69px;
+height: 8px;
+background: url(../images/icons/divider.png) no-repeat center;
+z-index: 9
+}
+.flip-clock-divider.hours .flip-clock-label:before{
+	left: -12px;
+}
+.flip-clock-divider.minutes .flip-clock-label:before{
+	left: -9px;
+}
+.flip-clock-divider.seconds .flip-clock-label:before{
+	left: -7px;
+}
+.flip-clock-dot {
+	display: none;
+}
+
+.flip-clock-wrapper .flip {
+	width: 20px;
+height: 90px;
+	margin: 0;
+	border-radius: 0;
+	font-size: 38px;
+	box-shadow:none;
+	position: relative;
+	margin-left: -11px;
+	background-color: transparent
+}
+.flip-clock-wrapper .flip:before{
+	position: absolute;
+   content: "";
+    left: 3px;
+    right: 3px;
+    bottom: -3px;
+    height: 10px;
+    background-color: #1d1d1d;
+	border-radius: 3px;
+}
+
+.flip-clock-wrapper .flip:after{
+	position: absolute;
+    content: "";
+    left: 5px;
+    right: 5px;
+    bottom: -6px;
+    height: 10px;
+    border-radius: 0 0 2px 2px;
+    background-color: #1d1d1d;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+.flip-clock-wrapper ul li a div,
+.flip-clock-wrapper ul li a div div.inn{
+	font-family: @font-heading;
+	font-size: 38px;
+	font-weight: 300;
+	font-style: italic;
+	color:@color-white;
+	outline:none;
+}
+.flip-clock-wrapper ul li a div div.inn{
+	background-color: #1d1d1d;
+	
+}
+
+/* jQuery Countdown styles 2.0.0. */
+
+.is-countdown {}
+
+.countdown-rtl {
+	direction: rtl;
+}
+
+.countdown-section {
+	display: block;
+	float: left;
+	text-align: center;
+	position: relative;
+	height: auto;
+	margin-right: 26px;
+	width: 18%;
+	padding: 0 23px;
+}
+
+.countdown-section:last-of-type {
+	margin-right: 0;
+}
+
+.countdown-amount {
+	font-family: @font-heading;
+	color: @color-theme;
+	font-size: 80px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 18px;
+}
+
+.countdown-period {
+	display: block;
+	color: #616161;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.countdown-boxed .countdown-section {
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 23px;
+}
+
+.countdown-boxed .countdown-amount {
+	color: @color-white;
+}
+
+.countdown-boxed .countdown-period {
+	color: #f9f9f9;
+}
+.countdown-dark .countdown-amount {
+	color: @color-heading;
+}
+
+.countdown-dark .countdown-period {
+	color: #616161;
+}
+
+.countdown-theme .countdown-amount,
+.countdown-theme .countdown-period{
+	color: @color-theme;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	.countdown-section {
+		width: 40%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.page-soon h3 {
+		font-size: 45px;
+		margin-top: 100px;
+	}
+}
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+	.countdown-section {
+		width: 16%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.countdown-amount {
+		font-size: 50px;
+	}
+
+	.page-soon h3 {
+		font-size: 45px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.countdown-section {
+		width: 17%;
+	}
+
+	.countdown-amount {
+		font-size: 60px;
+	}
+}
+@media only screen and (max-width : 991px) {
+	.page-soon {
+		padding-top: 100px !important;
+		padding-bottom: 100px !important;
+	}
+}

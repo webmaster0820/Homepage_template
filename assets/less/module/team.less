@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    #Team
+\*------------------------------------*/
+.team{
+	padding-bottom: 50px;
+}
+.member {
+  text-align: center;
+  overflow: hidden;
+	margin-bottom: 50px;
+}
+.member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.member .member-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.member .member-overlay { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1b1a1a), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(bottom, #1b1a1a, rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(bottom, #1b1a1a, rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(bottom, #1b1a1a, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(bottom, #1b1a1a, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(bottom, #1b1a1a, rgba(0, 0, 0, 0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#1b1a1a', endColorStr='rgba(0, 0, 0, 0)');
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+    opacity: 0.6;
+}
+.member:hover .member-overlay{
+      height: 62%;
+  opacity: 0.8;
+} 
+.member .member-overlay .member-social {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+  width: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+	opacity: 0;
+}
+.member .member-img:hover .member-overlay .member-social {
+  opacity: 1;
+}
+.member .member-overlay .member-social a {
+  color: @color-theme;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 20px;
+}
+.member .member-overlay .member-social a:last-child {
+  margin-right: 0;
+}
+.member .member-overlay .member-social a:hover {
+  color: @color-white;
+}
+.member .member-info{
+padding-top:30px;
+}
+.member .member-info h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.member .member-info h6 {
+  font-family: @font-body;
+  color:@color-body;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width : 991px) {
+  .member{
+    max-width:370px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

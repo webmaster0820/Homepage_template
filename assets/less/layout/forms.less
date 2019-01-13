@@ -1,0 +1,143 @@
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+
+.form-control {
+    color: #9b9b9b;
+    font-size: 13px;
+    font-weight: 400;
+    height: 51px;
+    line-height: 49px;
+    border: 1px solid transparent;
+    background: #f4f4f4;
+    padding: 0 0 0 20px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: @color-theme;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #f4f4f4;
+}
+
+/* Placeholder */
+
+.form-control::-webkit-input-placeholder {
+    color: @color-body;
+    text-transform: capitalize;
+}
+
+.form-control:-moz-placeholder {
+    color: @color-body;
+    text-transform: capitalize;
+}
+
+.form-control::-moz-placeholder {
+    color: @color-body;
+    text-transform: capitalize;
+}
+
+.form-control:-ms-input-placeholder {
+    color: @color-body;
+    text-transform: capitalize;
+}
+
+.form-select {
+    position: relative;
+}
+
+.form-select i {
+    position: absolute;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 49px;
+    right: 20px;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+    cursor: pointer;
+    color: @color-body;
+}
+
+.form-select select {
+    color: @color-body;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Input Checkbox */
+
+.input-checkbox {
+    margin-bottom: 30px;
+}
+
+.label-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 18px;
+    z-index: 2
+}
+
+.label-checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background: transparent;
+    border: 1px solid #e1e3e3;
+    border-radius: 2px;
+}
+
+.label-checkbox input:checked ~ .check-indicator {
+    background: @color-white;
+}
+
+.check-indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.label-checkbox .check-indicator:after {
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid @color-theme;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.label-checkbox input:checked ~ .check-indicator:after {
+    display: block;
+}
+
+.input-checkbox p {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    padding-left: 30px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}

@@ -1,0 +1,409 @@
+/*------------------------------------*\
+    #Landing Page / Promo Page
+\*------------------------------------*/
+
+.landing-hero {
+    height: 100vh;
+    padding-top: 200px;
+    position: relative;
+}
+.landing-hero .hero--headline{
+    font-weight: 700;
+}
+.landing-hero .hero--desc {
+    margin-bottom: 33px;
+}
+
+.landing-hero .scroll--down-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 2;
+    font-size: 18px;
+    color: @color-white;
+    display: block;
+}
+
+.landing-demos .portfolio-filter li a {
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.landing-demos .portfolio-item {
+    margin-bottom: 47px;
+}
+
+.landing-demos .portfolio-title h4 {
+    font-family: @font-body;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.landing-demos .portfolio-title h4 a {
+    color: @color-heading;
+}
+
+.landing-demos .portfolio-title:hover h4 a {
+    color: @color-theme;
+}
+
+.landing-demos .portfolio-img {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(40, 40, 40, 0.13);
+    -moz-box-shadow: 0px 0px 33px 0px rgba(40, 40, 40, 0.13);
+    box-shadow: 0px 0px 33px 0px rgba(40, 40, 40, 0.13);
+    background-color: #c0c0c0;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.landing-demos .portfolio-img .portfolio--hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient( 180deg, rgb(152, 203, 43) 0%, rgb(157, 208, 49) 64%, rgb(162, 213, 54) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(152, 203, 43) 0%, rgb(157, 208, 49) 64%, rgb(162, 213, 54) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(152, 203, 43) 0%, rgb(157, 208, 49) 64%, rgb(162, 213, 54) 100%);
+    background-image: linear-gradient( 180deg, rgb(152, 203, 43) 0%, rgb(157, 208, 49) 64%, rgb(162, 213, 54) 100%);
+    z-index: 1;
+    opacity: 0;
+    text-align: center;
+}
+
+.landing-demos .portfolio-img:hover .portfolio--hover {
+    opacity: 1;
+}
+
+.landing-demos .portfolio-img .portfolio--hover .btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    bottom: 40%;
+    margin-bottom: -25px;
+    transition: .4s ease-in-out;
+    opacity: 0;
+}
+
+.landing-demos .portfolio-img:hover .portfolio--hover .btn {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.landing-demos .portfolio-img .portfolio--hover .btn:hover {
+    background-color: @color-dark;
+    border-color: @color-dark;
+    color: @color-white;
+}
+
+
+.landing-demos .portfolio-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.landing-demos .portfolio-item:hover img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.landing-demos .portfolio-bio {
+    padding-top: 26px;
+}
+
+.landing-demos .add-sugg {
+    opacity: 1;
+    min-height: 320px;
+}
+
+.landing-demos .add-sugg .portfolio-img {
+    min-height: 320px;
+}
+
+.landing-demos .add-sugg .portfolio--hover {
+    opacity: 1;
+}
+
+.landing-demos .add-sugg .portfolio--hover a {
+    display: block;
+    color: @color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Landing Action*/
+
+.wrapper-parallax {
+    margin-bottom: 600px;
+    position: relative;
+    z-index: 50;
+}
+
+
+.landing-action .footer--copyright {
+    padding: 35px 0;
+    border-top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.landing-action {
+    padding: 270px 0;
+    position: relative
+}
+
+
+.landing-action p {
+    font-size: 16px;
+    font-weight: 700;
+    color: @color-white;
+    margin-bottom: 18px;
+}
+
+.landing-action h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    font-style: italic;
+    color: @color-white;
+    margin-bottom: 29px;
+}
+
+.landing-action .btn {
+    width: 270px;
+}
+
+/* landing-panels */
+
+.landing-banners .panel--logo {
+    background-color: @color-white;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(224, 224, 224, 0.4);
+    box-shadow: 0px 10px 20px 0px rgba(224, 224, 224, 0.4);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    padding: 40px 35px 32px;
+    margin-bottom: 30px;
+}
+
+.landing-banners .panel--logo:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.landing-banners .panel--logo img {
+    margin-bottom: 16px;
+}
+
+.landing-banners .panel--logo h5 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: @font-body;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.landing-featues {
+    padding-bottom: 50px;
+}
+
+.landing-featues .feature-box {
+    margin-bottom: 50px;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.bg-animate {
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: animatedBackground 30s linear infinite;
+}
+
+.landing-carousel {
+    height: 780px;
+}
+
+.landing-carousel .owl-item .carousel-item {
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    transform: scale(.7);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+.landing-carousel .owl-item.center .carousel-item {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    transform: scale(.9); //    margin-left: -25px;
+}
+
+.landing-carousel .carousel-navs .owl-controls {
+    margin: 0;
+}
+
+
+.landing-carousel .carousel-navs .owl-controls .owl-nav .owl-prev:before,
+.landing-carousel .carousel-navs .owl-controls .owl-nav .owl-next:before {
+    font-size: 25px;
+    color: @color-body;
+}
+
+
+.landing-carousel .carousel-navs .owl-controls .owl-nav .owl-prev {
+    left: 290px;
+}
+
+.landing-carousel .carousel-navs .owl-controls .owl-nav .owl-next {
+    right: 290px;
+}
+
+.landing-carousel .carousel-navs .owl-controls .owl-nav [class*=owl-] {
+    border: none;
+}
+
+.landing-carousel .owl-carousel .owl-item img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.2);
+    -moz-box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.2);
+    box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.2);
+
+}
+
+/* Landing Features */
+
+.landing-feature .feature-panel {
+    margin-bottom: 50px;
+}
+
+.landing-feature .feature-panel .feature--content h3 {
+    font-size: 18px;
+}
+
+.landing-niche .btn {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.btn--architecture {
+    background-color: #e9bf41;
+}
+
+.btn--bakery {
+    background-color: #e1be64;
+}
+
+.btn--barber {
+    background-color: #bf9456;
+}
+
+.btn--cafe {
+    background-color: #cda964;
+}
+
+.btn--construction {
+    background-color: #ffc527;
+}
+
+.btn--consulting {
+    background-color: #fc5d4a;
+}
+
+.btn--finance {
+    background-color: #4258a8;
+}
+
+.btn--health {
+    background-color: #3498db;
+}
+
+.btn--hosting {
+    background-color: #288feb;
+}
+
+.btn--hotel {
+    background-color: #bf9958;
+}
+
+.btn--lawyer {
+    background-color: #d5aa6d;
+}
+
+.btn--marketing {
+    background-color: #1dc49a;
+}
+
+.btn--pet {
+    background-color: #52be7f;
+}
+
+.btn--psychology {
+    background-color: #0eaff5;
+}
+
+.btn--restaurant {
+    background-color: #bb9356;
+}
+
+.landing-carousel2 .owl-carousel .owl-item img {
+    width: 100%;
+}
+
+.landing-carousel2 .owl-item .carousel-item {
+
+    box-shadow: 0 0 36px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .landing-demos .portfolio-item-box {
+        max-width: 370px;
+        margin: 0 auto 30px;
+    }
+    .landing-hero .scroll--down-btn {
+        bottom: 20px;
+    }
+    .landing-action h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .landing-demos .portfolio-item-box {
+        max-width: 370px;
+        margin: 0 auto 30px;
+    }
+}

@@ -1,0 +1,108 @@
+/* Small Devices, Tablets */
+@media only screen and (max-width: 991px) {
+	
+    .navbar .navbar-brand{
+		margin-left: 15px;
+		height: 100px;
+		line-height: 100px;
+    }
+ 
+    .navbar-toggler {
+        padding: 4px 10px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0;
+        margin-right: 15px;
+    }
+
+	.navbar-collapse{
+        background-color: @color-white;
+        padding: 0 15px;
+	}
+	
+    /* Navabr */
+    .navbar .navbar-nav > li {
+        margin-right: 0;
+    }
+
+    .navbar .navbar-nav li a {
+		line-height: 36px;
+		color: @color-heading;
+		display: block;
+    }
+    .navbar.navbar-light .navbar-nav > li > a {
+        color: @color-heading;
+    }
+	
+	.navbar-nav > li > .menu-item::before{
+		display: none;
+	}
+	.navbar-nav .has-dropdown:after{
+		font-family: @awesome;
+		content: "\f105";
+		font-size: 14px;
+		position: absolute;
+		right: 0;
+		top:0;
+		color:@color-heading;
+		line-height: 36px;
+	}
+	.navbar-nav .has-dropdown.show:after{
+	transform: rotate(90deg);
+	}
+	.navbar-nav .dropdown-menu.show{
+		border-top: 1px solid rgba(0, 0,0, 0.1);
+		padding-top:10px;
+		border-radius: 0;
+	}
+	.navbar-nav .dropdown-menu li {
+		line-height: 26px;
+	}
+	.navbar-nav .dropdown-menu li a{
+		padding-left: 20px;
+		color:@color-heading;
+		font-size:15px;
+	}
+
+	/* Header Modifers */
+
+	.navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+        
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+ 
+	.navbar-dark .navbar-toggler{
+		color:#222;
+		border-color: #222;
+	}
+
+	.navbar-dark .navbar-toggler-icon{
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,34,34, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+	.header-topbar .navbar .navbar-brand{
+		line-height: 82px;
+		height:82px;
+	}
+	.header-full .navbar{
+		padding-left: 0;
+	}
+
+	.header-full{
+		background-color: @color-dark3;
+		height: 100px;
+	}
+	.header-full + .mtop-100,
+.header-full + .page-title,
+.header-full + .hero,
+.header-full + .slider, {
+	position: relative;
+	margin-top:0
+}
+
+}

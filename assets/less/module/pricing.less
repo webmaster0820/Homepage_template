@@ -1,0 +1,160 @@
+/*------------------------------------*\
+    #PRICING-SECTION
+\*------------------------------------*/
+.section-divider:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    background: @color-gray
+}
+
+.pricing-panel {
+    position: relative;
+    text-align: center
+}
+
+.pricing-panel .pricing--heading {
+    box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 50px 64px;
+    margin-bottom: 30px;
+}
+
+.pricing-panel .pricing--heading .pricing--icon {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+    color: @color-theme;
+}
+
+.pricing-panel .pricing--heading h4 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+}
+
+.pricing-panel .pricing--heading p {
+    font-family: @font-heading;
+    color: #333333;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.pricing-panel .pricing--heading p span {
+    font-size: 45px;
+    vertical-align: bottom;
+}
+
+.pricing-panel .pricing--heading .pricing--desc {
+    color: #a5a5a5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 46px;
+}
+
+.pricing-panel .btn--secondary {
+    border: 2px solid rgba(34, 34, 34, 0.1);
+}
+
+.pricing-panel .pricing--footer {
+    color: @color-heading;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pricing-active .pricing-panel .pricing--heading {
+    background-image: -moz-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
+    background-image: -webkit-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
+    background-image: -ms-linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
+    background-image: linear-gradient(to top, #a2d536 0%, #98cb2b 100%);
+    margin-top: -40px;
+    padding-top: 90px;
+}
+
+.pricing-active .pricing-panel .pricing--heading p,
+.pricing-active .pricing-panel .pricing--heading .pricing--desc,
+.pricing-active .pricing-panel .pricing--heading .pricing--icon {
+    color: @color-white;
+}
+
+.pricing--notes {
+    color: #a5a5a5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* pricing #2 */
+.pricing-2 {
+    overflow: visible;
+}
+
+.pricing-2 .pricing-wrapper {
+    margin-top: -240px;
+    position: relative;
+    z-index: 2
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+    .pricing-panel {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+
+    .pricing-active .pricing-panel .pricing--heading {
+        margin-top: 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    .price-table {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .pricing-panel .pricing--heading {
+        padding: 25px 15px;
+    }
+
+    .pricing-active .pricing-panel .pricing--heading {
+        padding-top: 60px;
+    }
+
+    .pricing-panel .pricing--heading p {
+        font-size: 70px;
+    }
+
+    .pricing-panel .pricing--heading .pricing--desc {
+        font-size: 14px;
+    }
+
+    .pricing-active .pricing-panel .pricing--heading {
+        margin-top: 0;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+.pricing-panel .pricing--heading{
+    padding:40px;
+}
+
+}

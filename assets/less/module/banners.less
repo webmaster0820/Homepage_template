@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    #Banners
+\*------------------------------------*/
+/* Info Card */
+.info-cards{
+	padding: 80px 0 100px;
+}
+.info-card {
+	position: relative;
+ }
+
+.info-card .info-card-step {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	font-family: @font-heading;
+	color: #e8e8e8;
+	font-size: 52px;
+	line-height: 29px;
+}
+
+.info-card .info-card-content {
+	padding-left: 100px;
+}
+
+.info-card .info-card-subtitle {
+	color: #9b9b9b;
+	font-family: @font-body;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 13px;
+}
+
+.info-card .info-card-title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 29px;
+	margin-bottom: 17px
+}
+
+.info-card .info-card-desc {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+
+.info-card .info-card-links {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 29px;
+}
+
+.info-card .info-card-links i {
+	margin-right: 7px;
+}
+
+.info-card .info-card-links:hover {
+	color: @color-theme;
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+ 
+	.info-card {
+		margin-bottom: 40px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+.info-card .info-card-title{
+	font-size: 17px;
+}
+.info-card .info-card-desc {
+	font-size: 13px;
+}
+.info-card .info-card-content {
+    padding-left: 84px;
+}
+}
